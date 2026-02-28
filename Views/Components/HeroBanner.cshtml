@@ -1,0 +1,13 @@
+﻿@using DemoKentico.Common.Models
+@model DemoKentico.Common.Models.HeroBannerModel
+
+<section class="hero-banner">
+    <div class="hero-banner__inner">
+        @if (!string.IsNullOrEmpty(Model?.Description))
+        {
+            <div class="hero-banner__content">
+                @Html.Raw(Model.Description)
+            </div>
+        }
+    </div>
+</section>

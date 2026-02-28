@@ -1,0 +1,14 @@
+@using DemoKentico.Common.Models
+@model DemoKentico.Common.Models.SiteModel
+
+<header class="site-header">
+    <div class="site-header__inner">
+        @if (!string.IsNullOrEmpty(Model?.SiteName))
+        {
+            <a class="site-header__logo" href="/">@Model.SiteName</a>
+        }
+        <nav class="site-header__nav">
+            @* Navigation items rendered here *@
+        </nav>
+    </div>
+</header>

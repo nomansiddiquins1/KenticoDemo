@@ -1,0 +1,48 @@
+@using Kentico.Content.Web.Mvc
+@using Kentico.PageBuilder.Web.Mvc
+@using DemoKentico.Common.Models
+@using DemoKentico.Common.Constants
+
+@model DemoKentico.Common.Models.PageViewModel
+
+@{
+    ViewData["Title"] = Model.Page.SystemFields.ContentItemName;
+    ViewData["CurrentLanguage"] = Model.CurrentLanguage;
+    ViewData["AssetsVersion"] = "1";
+}
+
+@* SEO hreflang alternate links — equivalent to Umbraco's hreflang block in layout.cshtml *@
+@section AlternateLinks {
+    @if (Model.IsPublishedInEnglish)
+    {
+        <link rel="alternate" hreflang="x-default" href="@Model.EnUrl" />
+        <link rel="alternate" hreflang="en" href="@Model.EnUrl" />
+    }
+    @if (Model.IsPublishedInArabic)
+    {
+        <link rel="alternate" hreflang="ar" href="@Model.ArUrl" />
+    }
+}
+
+@* Header — equivalent to Umbraco's Html.PartialAsync("header.cshtml", site) *@
+@await Html.PartialAsync("~/Views/Shared/_Header.cshtml", Model.Site)
+
+@* Component loop — equivalent to Umbraco's foreach (IPublishedContent component in Model.Components) *@
+@if (Model.Components != null && Model.Components.Any())
+{
+    foreach (var component in Model.Components)
+    {
+        try
+        {
+            @* Dispatch by content type name — equivalent to Umbraco's component.ContentType.Alias routing *@
+            @await Component.InvokeAsync(component.GetType().Name, new { model = component })
+        }
+        catch (Exception ex)
+        {
+            <!-- Component render error: @ex.Message -->
+        }
+    }
+}
+
+@* Footer — equivalent to Umbraco's Html.PartialAsync("footer.cshtml", site) *@
+@await Html.PartialAsync("~/Views/Shared/_Footer.cshtml", Model.Site)

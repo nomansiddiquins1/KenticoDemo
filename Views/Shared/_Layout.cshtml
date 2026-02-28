@@ -1,0 +1,71 @@
+@using Kentico.Web.Mvc
+@using Kentico.PageBuilder.Web.Mvc
+@using Kentico.Content.Web.Mvc
+@inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment WebHostEnvironment
+
+@{
+    var assetsVersion = ViewData["AssetsVersion"] as string ?? "1";
+    var currentLanguage = ViewData["CurrentLanguage"] as string ?? "en";
+    var isArabic = currentLanguage.Equals("ar", StringComparison.OrdinalIgnoreCase);
+    var dir = isArabic ? "rtl" : "ltr";
+}
+
+<!DOCTYPE html>
+<html data-theme="light" lang="@currentLanguage" dir="@dir">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>@ViewData["Title"]</title>
+
+    @* SEO alternate hreflang links injected per page *@
+    @RenderSection("AlternateLinks", required: false)
+
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="~/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="~/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="~/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="~/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="~/android-chrome-512x512.png" />
+
+    <!-- Xperience Page Builder styles -->
+    <page-builder-styles />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="~/assets/css/main.css?v=@assetsVersion" />
+
+    @{
+        var overrideCss = $"global-styles{(isArabic ? "-ar" : "")}.css";
+        var overrideCssPath = System.IO.Path.Combine(
+            WebHostEnvironment.WebRootPath, "assets", "css", overrideCss);
+
+        if (System.IO.File.Exists(overrideCssPath))
+        {
+            <link rel="stylesheet" href="~/assets/css/@overrideCss?v=@assetsVersion" />
+        }
+    }
+
+    <!-- Head scripts (GTM, critical JS) -->
+    <script src="~/assets/js/gtm-scripts.js"></script>
+    @RenderSection("HeadScripts", required: false)
+</head>
+
+<body>
+    @RenderSection("BodyTop", required: false)
+
+    @RenderBody()
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="~/assets/js/main.js?v=@assetsVersion"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <!-- Xperience Page Builder scripts — must be last -->
+    <page-builder-scripts />
+
+    @RenderSection("BodyBottom", required: false)
+</body>
+</html>
