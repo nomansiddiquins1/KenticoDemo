@@ -1,13 +1,46 @@
 ﻿@using DemoKentico.Common.Models
-@model DemoKentico.Common.Models.HeroBannerModel
+@model DemoKentico.Common.Models.HeroBanner
 
-<section class="hero-banner">
+@*
+    Hero Banner component view.
+    Mirrors DFGC_umbraco's Views/Partials/Components/heroBanner.cshtml structure.
+    Supports heading, description, background image, and CTA button.
+*@
+
+<section class="hero-banner"
+         @if (!string.IsNullOrEmpty(Model?.BackgroundImageUrl))
+         {
+             <text>style="background-image: url('@Model.BackgroundImageUrl')"</text>
+         }>
     <div class="hero-banner__inner">
-        @if (!string.IsNullOrEmpty(Model?.Description))
-        {
-            <div class="hero-banner__content">
-                @Html.Raw(Model.Description)
-            </div>
-        }
+        <div class="hero-banner__content">
+
+            @if (!string.IsNullOrEmpty(Model?.Heading))
+            {
+                <h1 class="hero-banner__heading">
+                    @Html.Raw(Model.Heading)
+                </h1>
+            }
+
+            @if (!string.IsNullOrEmpty(Model?.Description))
+            {
+                <p class="hero-banner__description">
+                    @Html.Raw(Model.Description)
+                </p>
+            }
+
+            @if (!string.IsNullOrEmpty(Model?.CtaText) && !string.IsNullOrEmpty(Model?.CtaUrl))
+            {
+                <a href="@Model.CtaUrl" class="hero-banner__cta">
+                    <span>@Model.CtaText</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            }
+
+        </div>
     </div>
 </section>

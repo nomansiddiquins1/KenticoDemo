@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using CMS.Websites;
 using DemoKentico.Common.Constants;
 using DemoKentico.Common.Models;
@@ -45,7 +46,7 @@ namespace DemoKentico.Controllers
 
             var request = HttpContext.Request;
             var baseUrl = $"{request.Scheme}://{request.Host}";
-            var currentPath = dataContext.WebPageUrlPath;
+            var currentPath = request.Path.ToString();
 
             // Build hreflang URLs — same logic as Umbraco layout.cshtml alternate links
             var enUrl = $"{baseUrl}{currentPath.Replace("/ar/", "/en/")}";

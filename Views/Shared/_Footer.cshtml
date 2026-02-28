@@ -1,0 +1,14 @@
+@using DemoKentico.Common.Models
+@model DemoKentico.Common.Models.SiteModel
+
+<footer class="site-footer">
+    <div class="site-footer__inner">
+        <div class="site-footer__content">
+            @if (!string.IsNullOrEmpty(Model?.SiteName))
+            {
+                <p class="site-footer__brand">@Model.SiteName</p>
+            }
+            <p class="site-footer__copy">&copy; @DateTime.Now.Year All rights reserved.</p>
+        </div>
+    </div>
+</footer>

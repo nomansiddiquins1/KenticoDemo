@@ -6,9 +6,10 @@
 @model DemoKentico.Common.Models.PageViewModel
 
 @{
-    ViewData["Title"] = Model.Page.SystemFields.ContentItemName;
+    var pageName = Model.Page?.SystemFields?.ContentItemName ?? "Home";
+    ViewData["Title"] = pageName;
     ViewData["CurrentLanguage"] = Model.CurrentLanguage;
-    ViewData["AssetsVersion"] = "1";
+    ViewData["AssetsVersion"] = Model.Site?.AssetsVersion.ToString() ?? "1";
 }
 
 @* SEO hreflang alternate links — equivalent to Umbraco's hreflang block in layout.cshtml *@
@@ -34,8 +35,16 @@
     {
         try
         {
-            @* Dispatch by content type name — equivalent to Umbraco's component.ContentType.Alias routing *@
-            @await Component.InvokeAsync(component.GetType().Name, new { model = component })
+            @* Dispatch by content type — equivalent to Umbraco's component.ContentType.Alias routing *@
+            if (component is HeroBannerModel heroBanner)
+            {
+                @await Component.InvokeAsync("HeroBannerModel", new { model = heroBanner })
+            }
+            else
+            {
+                @* Generic fallback for future component types *@
+                @await Component.InvokeAsync(component.GetType().Name, new { model = component })
+            }
         }
         catch (Exception ex)
         {
