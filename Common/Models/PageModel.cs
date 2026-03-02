@@ -13,6 +13,9 @@ namespace DemoKentico.Common.Models
     /// the CONTENT_TYPE_NAME here must match the code name you used
     /// (e.g. "DemoKentico.Page").
     /// </summary>
+    /// 
+
+    [RegisterContentTypeMapping(PageModel.CONTENT_TYPE_NAME)]
     public class PageModel : IWebPageFieldsSource
     {
         public const string CONTENT_TYPE_NAME = "DemoKentico.Page";
@@ -24,6 +27,6 @@ namespace DemoKentico.Common.Models
         /// In DFGC_umbraco this was Page.Components (IEnumerable&lt;IPublishedContent&gt;).
         /// In Kentico this will be populated from linked items / page builder widgets.
         /// </summary>
-        public IEnumerable<object> Components { get; set; } = Enumerable.Empty<object>();
+        public IEnumerable<WebPageRelatedItem> Components { get; set; } = Enumerable.Empty<WebPageRelatedItem>();
     }
 }

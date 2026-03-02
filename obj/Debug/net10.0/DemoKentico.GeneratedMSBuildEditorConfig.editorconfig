@@ -26,6 +26,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xIZXJvQmFubmVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/KenticoDemo/Views/Components/InnerBanner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xJbm5lckJhbm5lci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/KenticoDemo/Views/Page/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

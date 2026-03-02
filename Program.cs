@@ -27,10 +27,11 @@ app.InitKentico();
 app.UseKentico();
 
 // ── Standard middleware ───────────────────────────────────────────────────────
-app.UseHttpsRedirection();
+
 app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
+app.Kentico().MapRoutes();
 
 app.MapControllerRoute(
     name: "default",

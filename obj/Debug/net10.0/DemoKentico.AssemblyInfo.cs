@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DemoKentico")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06b7356e85b890ed8672a0f50bd5a0595023182a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4fa15b1ff9c646f95fb64bd03f95741708327b1")]
 [assembly: System.Reflection.AssemblyProductAttribute("DemoKentico")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DemoKentico")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,6 @@
+wwwroot\assets\css\main.css
+wwwroot\assets\js\gtm-scripts.js
+wwwroot\assets\js\main.js
+D:\KenticoDemo\wwwroot\assets\css\main.css
+D:\KenticoDemo\wwwroot\assets\js\gtm-scripts.js
+D:\KenticoDemo\wwwroot\assets\js\main.js

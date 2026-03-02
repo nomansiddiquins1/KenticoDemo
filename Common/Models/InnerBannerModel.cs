@@ -7,20 +7,13 @@ namespace DemoKentico.Common.Models
     /// After you create the "HeroBanner" content type in Kentico admin,
     /// the properties here should map to the fields you define.
     /// </summary>
-    public class HeroBannerModel
+    public class InnerBannerModel
     {
-        public const string CONTENT_TYPE_NAME = "DemoKentico.HeroBanner";
+        public const string CONTENT_TYPE_NAME = "DemoKentico.InnerBanner";
 
         public string Heading { get; set; } = string.Empty;
 
         public string Description { get; set; } = string.Empty;
 
-        public string BackgroundImage { get; set; } = string.Empty;
-
-        public string CtaText { get; set; } = string.Empty;
-
-        public string CtaUrl { get; set; } = string.Empty;
-
-        public string Design { get; set; } = string.Empty;
     }
 }

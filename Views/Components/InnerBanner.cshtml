@@ -1,0 +1,31 @@
+﻿@using DemoKentico.Common.Models
+@model DemoKentico.Common.Models.InnerBanner
+
+@*
+    Hero Banner component view.
+    Mirrors DFGC_umbraco's Views/Partials/Components/heroBanner.cshtml structure.
+    Supports heading, description, background image, and CTA button.
+*@
+
+<section class="hero-banner"
+       
+    <div class="hero-banner__inner">
+        <div class="hero-banner__content">
+
+            @if (!string.IsNullOrEmpty(Model?.Heading))
+            {
+                <h1 class="hero-banner__heading">
+                    @Html.Raw(Model.Heading)
+                </h1>
+            }
+
+            @if (!string.IsNullOrEmpty(Model?.Description))
+            {
+                <p class="hero-banner__description">
+                    @Html.Raw(Model.Description)
+                </p>
+            }
+
+        </div>
+    </div>
+</section>
