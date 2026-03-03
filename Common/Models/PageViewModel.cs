@@ -10,7 +10,7 @@ namespace DemoKentico.Common.Models
     /// </summary>
     public class PageViewModel
     {
-        public PageModel Page { get; set; } = new();
+        public Page Page { get; set; } = new();
 
         public IEnumerable<object> Components { get; set; } = Enumerable.Empty<object>();
 

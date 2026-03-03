@@ -33,9 +33,9 @@ app.UseRouting();
 app.UseAuthorization();
 app.Kentico().MapRoutes();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}"
-);
+//app.MapControllerRoute(
+//    name: "default",
+//    pattern: "{controller=Home}/{action=Index}/{id?}"
+//);
 
 app.Run();

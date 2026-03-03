@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using DemoKentico.Common.Models;
 
@@ -9,6 +10,6 @@ namespace DemoKentico.Core.Services
     /// </summary>
     public interface IPageService
     {
-        Task<PageModel?> GetPageAsync(int webPageItemId, string languageName, string channelName);
+        Task<(Page? Page, IEnumerable<object> Components)> GetPageAsync(int webPageItemId, string languageName, string channelName);
     }
 }

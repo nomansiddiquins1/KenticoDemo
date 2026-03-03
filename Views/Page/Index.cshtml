@@ -3,7 +3,7 @@
 @using DemoKentico.Common.Models
 @using DemoKentico.Common.Constants
 
-@model DemoKentico.Common.Models.PageViewModel
+@model PageViewModel
 
 @{
     var pageName = Model.Page?.SystemFields?.ContentItemName ?? "Home";
@@ -36,11 +36,12 @@
         try
         {
             @* Dispatch by content type — equivalent to Umbraco's component.ContentType.Alias routing *@
-            
-           
-                @* Generic fallback for future component types *@
-                @await Component.InvokeAsync(component.GetType().Name, new { model = component })
-            
+
+
+            @* Generic fallback for future component types *@
+            @* @await Component.InvokeAsync(component.GetType().Name, new { model = component }) *@
+            @await Html.PartialAsync($"/Views/Components/{component.GetType().Name}.cshtml", component)
+
         }
         catch (Exception ex)
         {

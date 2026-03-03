@@ -1,8 +1,10 @@
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CMS.ContentEngine;
 using CMS.Websites;
 using CMS.Websites.Routing;
+using Kentico.Content.Web.Mvc;
 using DemoKentico.Common.Models;
 
 namespace DemoKentico.Core.Services
@@ -10,9 +12,6 @@ namespace DemoKentico.Core.Services
     /// <summary>
     /// Retrieves Page content items from Kentico Xperience.
     /// Equivalent to DFGC.Core's page-retrieval service layer.
-    /// 
-    /// NOTE: Until you create the "DemoKentico.Page" content type in the
-    /// Kentico admin backoffice, queries will return null — this is expected.
     /// </summary>
     public class PageService : IPageService
     {
@@ -27,14 +26,14 @@ namespace DemoKentico.Core.Services
             _channelContext = channelContext;
         }
 
-        public async Task<PageModel?> GetPageAsync(int webPageItemId, string languageName, string channelName)
+        public async Task<(Page? Page, IEnumerable<object> Components)> GetPageAsync(int webPageItemId, string languageName, string channelName)
         {
-            // Build a content query for the Page content type
             var queryBuilder = new ContentItemQueryBuilder()
                 .ForContentType(
-                    PageModel.CONTENT_TYPE_NAME,
+                    Page.CONTENT_TYPE_NAME,
                     q => q.ForWebsite(channelName)
                           .Where(w => w.WhereEquals(nameof(IWebPageContentQueryDataContainer.WebPageItemID), webPageItemId))
+                          .WithLinkedItems(1)
                           .TopN(1)
                 )
                 .InLanguage(languageName);
@@ -44,9 +43,27 @@ namespace DemoKentico.Core.Services
                 ForPreview = _channelContext.IsPreview
             };
 
-            var pages = await _queryExecutor.GetMappedWebPageResult<PageModel>(queryBuilder, options);
+            var pages = await _queryExecutor.GetMappedWebPageResult<Page>(queryBuilder, options);
+            var page = pages.FirstOrDefault();
+            
+            // Generic approach: Extract the "Components" property via reflection if it exists.
+            // This satisfies the requirement to handle any component type (HeroBanner, InnerBanner, etc.)
+            // as long as they are mapped to the "Components" property on the Page model.
+            IEnumerable<object> components = Enumerable.Empty<object>();
+            if (page != null)
+            {
+                var componentsProperty = page.GetType().GetProperty("Components");
+                if (componentsProperty != null)
+                {
+                    var value = componentsProperty.GetValue(page);
+                    if (value is System.Collections.IEnumerable enumerable)
+                    {
+                        components = enumerable.Cast<object>();
+                    }
+                }
+            }
 
-            return pages.FirstOrDefault();
+            return (page, components);
         }
     }
 }

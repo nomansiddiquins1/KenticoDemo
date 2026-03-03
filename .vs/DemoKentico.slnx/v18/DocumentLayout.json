@@ -3,16 +3,44 @@
   "WorkspaceRootPath": "D:\\KenticoDemo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|d:\\kenticodemo\\controllers\\pagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|solutionrelative:controllers\\pagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|d:\\kenticodemo\\views\\page\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|solutionrelative:views\\page\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|d:\\kenticodemo\\components\\herobannerviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|solutionrelative:components\\herobannerviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|d:\\kenticodemo\\common\\models\\innerbanner.generated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|solutionrelative:common\\models\\innerbanner.generated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|d:\\kenticodemo\\common\\models\\herobanner.generated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|solutionrelative:common\\models\\herobanner.generated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|d:\\kenticodemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|d:\\kenticodemo\\views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|solutionrelative:views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|d:\\kenticodemo\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|solutionrelative:views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|d:\\kenticodemo\\core\\services\\pageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|solutionrelative:core\\services\\pageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|d:\\kenticodemo\\common\\models\\pageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|solutionrelative:common\\models\\pageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|d:\\kenticodemo\\views\\components\\herobanner.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|solutionrelative:views\\components\\herobanner.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|d:\\kenticodemo\\controllers\\pagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B3407AF-14F7-5987-0E71-C8205B3CCBA1}|DemoKentico.csproj|solutionrelative:controllers\\pagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,38 +82,130 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InnerBanner.generated.cs",
+              "DocumentMoniker": "D:\\KenticoDemo\\Common\\Models\\InnerBanner.generated.cs",
+              "RelativeDocumentMoniker": "Common\\Models\\InnerBanner.generated.cs",
+              "ToolTip": "D:\\KenticoDemo\\Common\\Models\\InnerBanner.generated.cs",
+              "RelativeToolTip": "Common\\Models\\InnerBanner.generated.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:21:31.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HeroBanner.generated.cs",
+              "DocumentMoniker": "D:\\KenticoDemo\\Common\\Models\\HeroBanner.generated.cs",
+              "RelativeDocumentMoniker": "Common\\Models\\HeroBanner.generated.cs",
+              "ToolTip": "D:\\KenticoDemo\\Common\\Models\\HeroBanner.generated.cs",
+              "RelativeToolTip": "Common\\Models\\HeroBanner.generated.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:21:23.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\KenticoDemo\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\KenticoDemo\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:15:50.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "HeroBannerViewComponent.cs",
+              "DocumentMoniker": "D:\\KenticoDemo\\Components\\HeroBannerViewComponent.cs",
+              "RelativeDocumentMoniker": "Components\\HeroBannerViewComponent.cs",
+              "ToolTip": "D:\\KenticoDemo\\Components\\HeroBannerViewComponent.cs",
+              "RelativeToolTip": "Components\\HeroBannerViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:13:39.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Header.cshtml",
+              "DocumentMoniker": "D:\\KenticoDemo\\Views\\Shared\\_Header.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Header.cshtml",
+              "ToolTip": "D:\\KenticoDemo\\Views\\Shared\\_Header.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Header.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-02T18:13:24.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\KenticoDemo\\Views\\Page\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Page\\Index.cshtml",
+              "ToolTip": "D:\\KenticoDemo\\Views\\Page\\Index.cshtml",
+              "RelativeToolTip": "Views\\Page\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-02T17:57:39.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Footer.cshtml",
+              "DocumentMoniker": "D:\\KenticoDemo\\Views\\Shared\\_Footer.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Footer.cshtml",
+              "ToolTip": "D:\\KenticoDemo\\Views\\Shared\\_Footer.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Footer.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-02T18:13:29.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HeroBanner.cshtml",
+              "DocumentMoniker": "D:\\KenticoDemo\\Views\\Components\\HeroBanner.cshtml",
+              "RelativeDocumentMoniker": "Views\\Components\\HeroBanner.cshtml",
+              "ToolTip": "D:\\KenticoDemo\\Views\\Components\\HeroBanner.cshtml",
+              "RelativeToolTip": "Views\\Components\\HeroBanner.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-02T18:06:04.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "PageService.cs",
               "DocumentMoniker": "D:\\KenticoDemo\\Core\\Services\\PageService.cs",
               "RelativeDocumentMoniker": "Core\\Services\\PageService.cs",
               "ToolTip": "D:\\KenticoDemo\\Core\\Services\\PageService.cs",
               "RelativeToolTip": "Core\\Services\\PageService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAawB4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-01T20:18:21.417Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PageViewModel.cs",
-              "DocumentMoniker": "D:\\KenticoDemo\\Common\\Models\\PageViewModel.cs",
-              "RelativeDocumentMoniker": "Common\\Models\\PageViewModel.cs",
-              "ToolTip": "D:\\KenticoDemo\\Common\\Models\\PageViewModel.cs",
-              "RelativeToolTip": "Common\\Models\\PageViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T19:45:43.567Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "PageController.cs",
               "DocumentMoniker": "D:\\KenticoDemo\\Controllers\\PageController.cs",
               "RelativeDocumentMoniker": "Controllers\\PageController.cs",
               "ToolTip": "D:\\KenticoDemo\\Controllers\\PageController.cs",
               "RelativeToolTip": "Controllers\\PageController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAWwCsAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAMwDkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-01T19:33:37.301Z",
               "EditorCaption": ""

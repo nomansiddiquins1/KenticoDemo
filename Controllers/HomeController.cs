@@ -17,7 +17,7 @@ namespace DemoKentico.Controllers
         {
             var viewModel = new PageViewModel
             {
-                Page = new PageModel(),
+                Page = new Page(),
                 CurrentLanguage = "en",
                 IsPublishedInEnglish = true,
                 Site = new SiteModel
@@ -25,16 +25,13 @@ namespace DemoKentico.Controllers
                     SiteName = "DemoKentico",
                     AssetsVersion = 1
                 },
-                Components = new List<object>
+                Components = new List<HeroBanner>
                 {
                     // Static Hero Banner — replace with CMS data later
-                    new HeroBannerModel
+                    new HeroBanner
                     {
                         Heading = "Welcome to <em>DemoKentico</em>",
-                        Description = "A Kentico Xperience 31 demo project mirroring the DFGC Umbraco architecture. Set up your content types in the admin to get started.",
-                        CtaText = "Open Admin",
-                        CtaUrl = "/admin",
-                        Design = ""
+                        Description = "A Kentico Xperience 31 demo project mirroring the DFGC Umbraco architecture. Set up your content types in the admin to get started."
                     }
                 }
             };
